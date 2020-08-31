@@ -1,0 +1,224 @@
+*{box-sizing:border-box
+}
+header,nav,main,footer{display:block;
+}
+
+body { background-color: #F70C0C;
+		background-image:radial-gradient(#F70C0C, #FFFFFF);
+	  font-family: Verdana, Arial, sans-serif;
+}
+header { background-color: #F70C0C;
+       background-image: url(image/header.jpg);
+	   background-size:100% 100%;
+	   border-bottom:2px solid #FFFF00
+}
+h1{ padding: 0.5em;
+	text-align:center;
+	color:#F0E68C;
+	text-shadow:2px 2px 1px #000000;
+	margin:0;
+	
+}
+h2{ padding: 0.5em;
+	text-align:center;
+	color:#F70C0C; 
+	margin:0;	
+}
+h3{ color:#F70C0C; 
+	padding: 0.5em;
+}
+nav {
+	float:left;
+	 width: 250px;
+     font-weight: bold; 
+	 padding: 1em;
+}
+nav a { text-decoration: none; 
+		display:block;
+		text-align:center;
+		font-weight: bold;
+		border:3px solid #FFFF00;
+		border-radius:50px;
+		padding:1em;
+		margin-bottom:1em;
+}
+nav a:link{color: #FFFFFF;
+background-color:#F70C0C;
+}
+nav a:visited{color:#FFFFFF;
+background-color: #f26fb3;
+}
+nav a:hover{color: gold;
+background-color:#FF0000;
+
+}
+
+nav ul{list-style-type:none;
+padding-left: 0;
+}
+
+main { padding-left: 2em;
+      padding-right: 2em;
+	  padding-top: 1em;
+	  margin-left:260px;
+	  background-color:#FFFFFF;
+	  margin-bottom:0px;
+}
+main a{
+        text-decoration:none;	   
+	    color:#F70C0C;
+}
+
+footer {background-color:#F70C0C;
+	   color:#FFFFFF;
+       font-size: small;
+	   font-style: italic;
+	   text-align: center;
+	   padding: 1em;
+	   border-top:2px solid #FFFF00
+}
+footer a {
+        text-decoration:none;	   
+	    color:#FFFF00;
+}
+#wrapper { width: 80%;
+           margin-left: auto;
+		   margin-right: auto;
+		   background-color: #9ea3ee;
+		   min-width: 1024px;
+		   max-width: 1200px;
+}
+		   
+.rest { font-weight: bold; 
+			color:#F70C0C;
+}
+.floatleft {float:left;
+margin-right:4em;
+}
+.clearleft{clear:left;
+	
+}
+.floatright{float:right;
+margin-left:2em;
+}
+
+.clearright{clear:right;	
+}
+.outlink{border-radius:0px;
+border:1px dashed;
+padding:1em;
+	
+}
+.ppic{
+    max-width: 700px;
+}
+.fixtext{
+    
+    position:fixed;
+    right:10em;
+    bottom:2em;
+    border:0.2em solid #FFFF00;
+    border-radius: 2em;
+    padding:0.5em 0.5em;
+    font-weight: bolder;
+    color: #FFFFFF;
+    background-color: #f26fb3;
+}
+
+#mobile { display: none; }
+#desktop { display: inline;
+}
+/*for table*/
+table { margin-left: 2em;
+        border: 5px solid #F70C0C;
+        width: 300px; 
+		border-spacing: 0;
+}
+td, th { padding: 0.5em;
+		 border-style: none;
+         font-family: Arial, sans-serif; 
+}
+caption { font-family: Verdana, sans-serif;
+          font-weight: bold;
+          font-size: 1.2em;
+          color:#F70C0C;
+          padding-bottom: 0.5em; 
+}
+tr:nth-of-type(even) { background-color: #eaeaea; }
+tr:first-of-type { background-color: #9ea3ee;
+				   color: #000000; }
+/*for forms*/
+form { min-width: 300px;
+    max-width: :500px;
+        background-color:#9ea3ee;
+	   font-family: Arial, sans-serif;
+       padding: 15px;	}
+
+fieldset { min-width: 300px;
+    max-width: 450px;
+           border: 5px ridge #F0E68C;
+           padding: 10px;
+           margin-bottom: 10px; }
+legend { font-family: Georgia, "Times New Roman", serif;
+         font-weight: bold; }
+label { font-family: Arial, sans-serif; }
+
+
+/*for tablet*/
+@media only screen and (max-width: 1024px) {
+	body { margin: 0;
+		  padding: 0; 
+            background-image: none;
+    }
+	#wrapper { width: 100%;
+		       min-width: 300px;
+			   margin: 0;
+			   padding: 0; }
+	header { padding-top: 1px; }
+	nav { float: none;
+	      padding-left: 2em;
+	      width: auto; 
+	}
+	nav a { padding: 0.2em;
+	      margin-left: 0.3em;
+		  float: left;
+		  width: 23%; 
+		  border-radius:0px;
+		  }
+	main  { padding: 2.5em 1em;
+	       margin: 0;
+		   font-size: 90%;
+		   clear: both; }
+	h2, h3, p, dl { padding-left: 2em; padding-right: 2em; }
+	main ul { margin-left: 2em; }
+	.floatleft { margin-left: 2em; margin-bottom: 1em;  }
+	.clear { padding-left: 2em; }
+    .outlink{padding:0.3em;
+	
+}
+    .fixtext{ display: none;
+}
+
+}/*end tablet*/
+
+/*for cellphone*/
+@media only all and (max-width: 768px) {
+	header{background-image: none}
+	h1 { font-size: 2em; padding-top: 0.25em; padding-left: 1.5em; width: 85%; }
+	nav {display: block; }
+	nav a { padding: 0.5em; width: 45%; min-width: 6em; margin-left: 0.5em; display: inline; }
+	main { padding-top: 0; }
+	main img{ display: none;}
+	.floatleft { float: none;margin:0}
+	footer { padding: 0.5em; margin: 0; }
+
+	#mobile { display: inline;color:blue;font-weight: bold}
+	#desktop { display: none; }
+    nav p{
+    display: none;
+}
+.outlink{
+    display: none;
+}
+}/*end cellphone*/
+	   
